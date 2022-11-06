@@ -1,2 +1,6 @@
 # EntropicLPP
 Python implementation for the Entropic LPP method
+
+Source code for the experiments in the paper "Entropic Locality Preserving Projections" by Alexandre L. M. Levada
+
+Entropic Laplacian Eigenmaps is a recent dimensionality reduction based metric learning method that uses the Kullback-Leibler divergence between Gaussian distributions instead of the usual Euclidean distance. Despite providing good results in pattern classification problems, it has a major limitation: it is not clear how to evaluate out-of-sample instances. In this paper, we propose Entropic Locality Preserving Projections (ELPP) by replacing the Laplacian Eigenmaps algorithm by LPP, its linearized counterpart. The main advantage is that we can produce a projection matrix, which makes it possible the direct mapping of out-of-sample instances. As there is a closed form expression for the KL-divergence between multivariate Gaussians, the proposed method avoids numerical optimization techniques, being computationally fast. Results with several real-world datasets show that the proposed method is capable of improving the average classification performance in comparison to regular LPP and some state-of-the-art manifold learning algorithms, especially in datasets with limited number of samples.
